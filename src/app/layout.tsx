@@ -3,6 +3,13 @@ import "./globals.css";
 import { Header } from "@/widgets/header/header";
 import { Footer } from "@/widgets/footer/footer";
 import { ReactLenis } from "lenis/react";
+import localFont from "next/font/local";
+
+const trehsot = localFont({
+  src: "../../public/fonts/Trehsot.otf",
+  variable: "--font-trehsot",
+  weight: "200 700",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +24,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`h-full antialiased`}>
+    <html lang="en" className={`h-full antialiased ${trehsot.variable}`}>
       <body className="min-h-full flex flex-col">
         <ReactLenis
           root

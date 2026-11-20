@@ -55,7 +55,7 @@ export const Hero = () => {
         >
           <motion.div style={{ x }} className="relative h-full w-full">
             <Image
-              src="/images/hero.png"
+              src="/images/one.jpg"
               alt="hero lamp"
               fill
               priority

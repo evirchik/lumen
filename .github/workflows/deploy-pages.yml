@@ -34,7 +34,7 @@ jobs:
 
       - name: Build static site
         env:
-          PAGES_BASE_PATH: /lumen
+          NEXT_PUBLIC_PAGES_BASE_PATH: /lumen
         run: bun run build
 
       - name: Disable Jekyll

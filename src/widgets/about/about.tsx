@@ -2,13 +2,15 @@
 import { motion } from "motion/react";
 
 export const About = () => {
+  const basePath = process.env.NEXT_PUBLIC_PAGES_BASE_PATH || "";
+
   return (
     <section className="relative h-lvh" id="about">
       <div className="h-full w-full overflow-hidden [clip-path:inset(0)] flex justify-center items-center">
         <div
           className="pointer-events-none fixed top-0 left-0 h-lvh w-full bg-cover bg-center"
           style={{
-            backgroundImage: "url('/lumen/images/about.jpg')",
+            backgroundImage: `url('${basePath}/images/about.jpg')`,
           }}
         />
         <motion.span
