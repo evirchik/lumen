@@ -8,7 +8,7 @@ export const About = () => {
         <div
           className="pointer-events-none fixed top-0 left-0 h-lvh w-full bg-cover bg-center"
           style={{
-            backgroundImage: "url('/images/about.jpg')",
+            backgroundImage: "url('/lumen/images/about.jpg')",
           }}
         />
         <motion.span

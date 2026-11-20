@@ -10,7 +10,7 @@
   font-style: normal;
   font-weight: 200 700;
   font-display: swap;
-  src: url("/fonts/Trehsot.otf") format("opentype");
+  src: url("/lumen/fonts/Trehsot.otf") format("opentype");
 }
 
 @theme inline {
