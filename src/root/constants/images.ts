@@ -1,26 +1,28 @@
+const basePath = process.env.NEXT_PUBLIC_PAGES_BASE_PATH || "";
+
 export const IMAGES = [
   {
     name: "Подвесная люстра",
-    image: "/images/one.jpg",
+    image: `${basePath}/images/one.jpg`,
   },
   {
     name: "Торшер с мягким светом",
-    image: "/images/two.jpg",
+    image: `${basePath}/images/two.jpg`,
   },
   {
     name: "Настольный светильник",
-    image: "/images/tree.jpg",
+    image: `${basePath}/images/tree.jpg`,
   },
   {
     name: "Дизайнерский торшер",
-    image: "/images/four.jpg",
+    image: `${basePath}/images/four.jpg`,
   },
   {
     name: "Подвесной светильник",
-    image: "/images/five.jpg",
+    image: `${basePath}/images/five.jpg`,
   },
   {
     name: "Настенная люстра",
-    image: "/images/six.jpg",
+    image: `${basePath}/images/six.jpg`,
   },
 ];

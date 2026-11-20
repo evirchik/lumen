@@ -6,6 +6,8 @@ import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
 import { Button } from "@/shared/ui/button";
 import { ArrowRight } from "lucide-react";
 
+const basePath = process.env.NEXT_PUBLIC_PAGES_BASE_PATH || "";
+
 export const Hero = () => {
   // Положение курсора
   const mouseX = useMotionValue(0);
@@ -55,7 +57,7 @@ export const Hero = () => {
         >
           <motion.div style={{ x }} className="relative h-full w-full">
             <Image
-              src="/images/one.jpg"
+              src={`${basePath}/images/one.jpg`}
               alt="hero lamp"
               fill
               priority

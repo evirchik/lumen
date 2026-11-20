@@ -4,6 +4,8 @@ import { Container } from "@/shared/ui/container";
 import Image from "next/image";
 import { motion } from "motion/react";
 
+const basePath = process.env.NEXT_PUBLIC_PAGES_BASE_PATH || "";
+
 export const Footer = () => {
   return (
     <footer className="py-25" id="contacts">
@@ -28,7 +30,7 @@ export const Footer = () => {
             transition={{ duration: 1, delay: 0.5 }}
           >
             <Image
-              src="/images/arrow.svg"
+              src={`${basePath}/images/arrow.svg`}
               alt="arrow"
               width={100}
               height={100}
