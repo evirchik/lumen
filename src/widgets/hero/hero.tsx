@@ -57,7 +57,7 @@ export const Hero = () => {
         >
           <motion.div style={{ x }} className="relative h-full w-full">
             <Image
-              src={`${basePath}/images/one.jpg`}
+              src={`${basePath}/images/hero.png`}
               alt="hero lamp"
               fill
               priority
@@ -66,7 +66,7 @@ export const Hero = () => {
 
             {/* Световое пятно */}
             <motion.div
-              style={{ x: glowX, }}
+              style={{ x: glowX }}
               className="absolute left-1/2 top-1/2 aspect-square w-150 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#E4AA6E]/20 blur-3xl max-sm:w-100"
             />
           </motion.div>
